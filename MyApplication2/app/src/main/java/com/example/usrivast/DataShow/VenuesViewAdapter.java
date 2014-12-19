@@ -1,7 +1,9 @@
 package com.example.usrivast.DataShow;
 
 import android.content.Context;
+import android.content.Intent;
 import android.media.Image;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,7 +26,7 @@ public class VenuesViewAdapter extends BaseAdapter{
     private ArrayList<Venue> venues;
     Context context;
 
-    public VenuesViewAdapter(Context context)
+    public VenuesViewAdapter(Context context, String ...params)
     {
         this.context = context;
         venues = VenueAdapter.getInstance(context).getVenues();
@@ -51,7 +53,7 @@ public class VenuesViewAdapter extends BaseAdapter{
         LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View row = layoutInflater.inflate(R.layout.venue, parent, false);
 
-        Venue v = venues.get(position);
+        final Venue v = venues.get(position);
         TextView smallText = (TextView)row.findViewById(R.id.smalltextview);
 
         smallText.setText(v.getName() + "\n" + v.getCountry());
@@ -62,6 +64,16 @@ public class VenuesViewAdapter extends BaseAdapter{
         i.setImageResource(k);
 
         largeText.setText(v.getDescription());
+
+        row.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v1) {
+                String uri = "geo:0,0?q=" + v.getName() + ", " + v.getCountry();
+                Intent i = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse(uri));
+                i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                context.startActivity(i);
+            }
+        });
         return row;
     }
 

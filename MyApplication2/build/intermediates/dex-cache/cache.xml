@@ -2,6 +2,12 @@
 <pre-dex-items>
 
     <item
+        dex="/Users/usrivast/Desktop/android/18dec/MyApplication2/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.0-4004facb470f8de22f42bb44a5638bc700cc5615.jar"
+        jar="/Users/usrivast/Desktop/android/18dec/MyApplication2/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/libs/internal_impl-21.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="1609e6d42d0480b0f4188e2c29f75388fa12a8f0"/>
+    <item
         dex="/Users/usrivast/Desktop/android/18dec/MyApplication2/app/build/intermediates/pre-dexed/debug/classes-dbea0ff5ed0afc8139e5a84a645843090bda25c9.jar"
         jar="/Users/usrivast/Desktop/android/18dec/MyApplication2/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/classes.jar"
         jumboMode="false"
@@ -13,11 +19,5 @@
         jumboMode="false"
         revision="20.0.0"
         sha1="1a578b9607b36266c63d43a4fa0ab5664dbe911e"/>
-    <item
-        dex="/Users/usrivast/Desktop/android/18dec/MyApplication2/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.0-4004facb470f8de22f42bb44a5638bc700cc5615.jar"
-        jar="/Users/usrivast/Desktop/android/18dec/MyApplication2/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/libs/internal_impl-21.0.0.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="1609e6d42d0480b0f4188e2c29f75388fa12a8f0"/>
 
 </pre-dex-items>

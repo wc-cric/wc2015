@@ -1,11 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bttn"
+    android:background="@drawable/info_btn"
+    android:id="@+id/fixture_button"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/fixture_button"
-        android:text=""
-        android:gravity="left|center_vertical"
-        style="@style/bttn"
-        android:background="@drawable/info_btn" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:id="@+id/fix">
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/fixture_team1imageView"
+            android:scaleType="centerCrop"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/fixture_team2imageView"
+            android:scaleType="centerCrop"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Small Text"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:id="@+id/fixture_smalltextview"
+            android:layout_alignBottom="@+id/fixture_team1imageView"
+            android:layout_alignParentTop="true"
+            android:textAlignment="center"
+            android:layout_toRightOf="@+id/fixture_team1imageView"
+            android:layout_toLeftOf="@+id/fixture_team2imageView"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical" />
+        </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:textColor="@color/black"
+        android:id="@+id/fixture_largetextView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:textSize="12dp"
+        android:layout_below="@+id/fix" />
+
+
+
+
+
+
 </RelativeLayout>

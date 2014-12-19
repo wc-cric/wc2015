@@ -12,9 +12,13 @@ import android.widget.ListView;
 public class ShowVenuesFragment extends Fragment {
 
     ListView venuesList;
-	public static Fragment newInstance(Context context) {
+    static String team = "";
+	public static Fragment newInstance(Context context, String ... params) {
 		ShowVenuesFragment f = new ShowVenuesFragment();
-		
+        if(params.length > 0)
+        {
+            team = params[0];
+        }
 		return f;
 	}
 
@@ -22,7 +26,7 @@ public class ShowVenuesFragment extends Fragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
 		ViewGroup root = (ViewGroup) inflater.inflate(R.layout.activity_show_venues, null);
         venuesList = (ListView)root.findViewById(R.id.activity_show_venues_venueList);
-        venuesList.setAdapter(new VenuesViewAdapter(getActivity().getApplicationContext()));
+        venuesList.setAdapter(new VenuesViewAdapter(getActivity().getApplicationContext(), team));
 		return root;
 	}
 	
