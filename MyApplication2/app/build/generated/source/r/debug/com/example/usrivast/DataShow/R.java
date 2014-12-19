@@ -55,43 +55,41 @@ public final class R {
     }
     public static final class id {
         public static final int ShowTeams=0x7f090009;
-        public static final int action_settings=0x7f090026;
+        public static final int action_settings=0x7f090024;
         public static final int activity_show_fixtures_listView=0x7f090008;
-        public static final int activity_show_venues_venueList=0x7f09000e;
-        public static final int first_tab=0x7f090015;
+        public static final int activity_show_venues_venueList=0x7f09000b;
+        public static final int first_tab=0x7f090012;
         public static final int first_text=0x7f090001;
-        public static final int fix=0x7f090010;
-        public static final int fixture_button=0x7f09000f;
-        public static final int fixture_largetextView=0x7f090014;
-        public static final int fixture_smalltextview=0x7f090013;
-        public static final int fixture_team1imageView=0x7f090011;
-        public static final int fixture_team2imageView=0x7f090012;
-        public static final int groupAListView=0x7f09000b;
-        public static final int groupBListView=0x7f09000d;
-        public static final int largetextView=0x7f090023;
-        public static final int second_tab=0x7f090016;
+        public static final int fix=0x7f09000d;
+        public static final int fixture_button=0x7f09000c;
+        public static final int fixture_largetextView=0x7f090011;
+        public static final int fixture_smalltextview=0x7f090010;
+        public static final int fixture_team1imageView=0x7f09000e;
+        public static final int fixture_team2imageView=0x7f09000f;
+        public static final int largetextView=0x7f090021;
+        public static final int second_tab=0x7f090013;
         public static final int second_text=0x7f090003;
-        public static final int showTeamsGroupATextView=0x7f09000a;
-        public static final int showTeamsGroupBTextView=0x7f09000c;
-        public static final int smallteamtextview=0x7f090021;
-        public static final int smalltextview=0x7f090025;
+        public static final int smallteamtextview=0x7f09001f;
+        public static final int smalltextview=0x7f090023;
         public static final int tableRow1=0x7f090000;
-        public static final int teamViewPAger=0x7f09001f;
-        public static final int team_button=0x7f090020;
-        public static final int teaminfo_first_text=0x7f090019;
-        public static final int teaminfo_second_text=0x7f09001b;
-        public static final int teaminfo_textView1=0x7f09001a;
-        public static final int teaminfo_textView2=0x7f09001c;
-        public static final int teaminfo_textView3=0x7f09001e;
-        public static final int teaminfo_third_text=0x7f09001d;
-        public static final int teamtableRow1=0x7f090018;
+        public static final int teamListView=0x7f09000a;
+        public static final int teamViewPAger=0x7f09001c;
+        public static final int team_button=0x7f09001e;
+        public static final int team_section_textView=0x7f09001d;
+        public static final int teaminfo_first_text=0x7f090016;
+        public static final int teaminfo_second_text=0x7f090018;
+        public static final int teaminfo_textView1=0x7f090017;
+        public static final int teaminfo_textView2=0x7f090019;
+        public static final int teaminfo_textView3=0x7f09001b;
+        public static final int teaminfo_third_text=0x7f09001a;
+        public static final int teamtableRow1=0x7f090015;
         public static final int textView1=0x7f090002;
         public static final int textView2=0x7f090004;
         public static final int textView3=0x7f090006;
-        public static final int third_tab=0x7f090017;
+        public static final int third_tab=0x7f090014;
         public static final int third_text=0x7f090005;
-        public static final int venue_button=0x7f090022;
-        public static final int venueimageView=0x7f090024;
+        public static final int venue_button=0x7f090020;
+        public static final int venueimageView=0x7f090022;
         public static final int viewPager=0x7f090007;
     }
     public static final class layout {
@@ -102,8 +100,9 @@ public final class R {
         public static final int fixture=0x7f030004;
         public static final int indicator=0x7f030005;
         public static final int show_team_info=0x7f030006;
-        public static final int teams=0x7f030007;
-        public static final int venue=0x7f030008;
+        public static final int team_section=0x7f030007;
+        public static final int teams=0x7f030008;
+        public static final int venue=0x7f030009;
     }
     public static final class menu {
         public static final int menu_main=0x7f080000;

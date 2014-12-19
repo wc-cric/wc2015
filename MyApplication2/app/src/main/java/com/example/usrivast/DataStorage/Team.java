@@ -3,7 +3,7 @@ package com.example.usrivast.DataStorage;
 /**
  * Created by usrivast on 17/12/14.
  */
-public class Team {
+public class Team implements Item{
 
     private int _id;
     private String teamName;
@@ -31,5 +31,15 @@ public class Team {
 
     public void setGroup(String group) {
         this.group = group;
+    }
+
+    @Override
+    public boolean isSection() {
+        return false;
+    }
+
+    @Override
+    public boolean isTeam() {
+        return true;
     }
 }
