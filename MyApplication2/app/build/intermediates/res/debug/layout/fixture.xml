@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/fixture_button"
+        android:text=""
+        android:gravity="left|center_vertical"
+        style="@style/bttn"
+        android:background="@drawable/info_btn" />
+</RelativeLayout>
+<!-- From: file:/Users/usrivast/Desktop/android/18dec/MyApplication2/app/src/main/res/layout/fixture.xml -->
